@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.liuy314.griddingsale">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:theme="@style/AppTheme"
+        android:name=".utl.GriddingSaleApp">
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="5qkPhDRzGA4DuI6bbrhh210l" />
+
+        <activity
+            android:name=".ui.SplashActivity"
+            android:label="@string/splash_activity_label">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.FenJuActivity"
+            android:label="@string/fenju_activity_label"
+            android:launchMode="singleTask">
+
+        </activity>
+        <activity
+            android:name=".ui.WangGeActivity"
+            android:label="Wangge"
+            android:parentActivityName=".ui.FenJuActivity"
+            android:launchMode="singleTask">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.FenJuActivity" />
+        </activity>
+        <activity android:name=".ui.QuDaoWangGeActivity"
+            android:label="QudaoWangge"
+            android:parentActivityName=".ui.WangGeActivity"
+            android:launchMode="singleTask">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.WangGeActivity" />
+        </activity>
+        <activity android:name=".ui.ShopActivity"
+            android:label="Shop"
+            android:parentActivityName=".ui.QuDaoWangGeActivity"
+            android:launchMode="singleTask">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.QuDaoWangGeActivity" />
+        </activity>
+        <activity android:name=".ui.ShopMapActivity"
+            android:label="Shop"
+            android:parentActivityName=".ui.ShopActivity"
+            android:launchMode="singleTask">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ShopActivity" />
+        </activity>
+
+
+    </application>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+</manifest>

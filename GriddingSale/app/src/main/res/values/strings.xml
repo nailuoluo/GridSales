@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">网格营销</string>
+    <string name="splash_activity_label">网格营销</string>
+    <string name="fenju_activity_label">分局</string>
+
+    <string name="fenju_name_xinshun">新顺分局</string>
+    <string name="fenju_name_linhe">林河分局</string>
+    <string name="fenju_name_konggang">空港分局</string>
+    <string name="fenju_name_niulanshan">牛栏山分局</string>
+    <string name="fenju_name_yangzhen">杨镇分局</string>
+    <string name="fenju_name_mulin">木林分局</string>
+
+    <string name="menu_about">关于</string>
+    <string name="manager">项目负责人：</string>
+    <string name="worker">代码：</string>
+    <string name="version">版本</string>
+    <string name="version_num">0.01</string>
+
+    <string name="btn_name_confirm">确定</string>
+    <string name="progressbar_status_loading">正在读取数据库...</string>
+    <string name="progressbar_status_loading_OK">读取完毕！</string>
+
+
+</resources>

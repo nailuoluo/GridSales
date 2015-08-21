@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/easter_egg_layout"
+    android:padding="15dip">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/manager"
+            android:textColor="@color/red_orange"
+            android:textSize="20dip"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="仇光晔"
+            android:textSize="20dip"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dip">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/worker"
+            android:textColor="@color/red_orange"
+            android:textSize="20dip"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="刘杨 柳伟杰"
+            android:textSize="20dip"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/easter_egg_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="220dip"
+        android:scaleType="fitXY"
+        android:visibility="gone"/>
+    <!--android:src="@mipmap/easteregg_pic"-->
+
+</LinearLayout>
